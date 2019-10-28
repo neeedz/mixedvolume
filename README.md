@@ -4,7 +4,7 @@ We provide a Python script NetworkGenerator.py that will convert the list of rea
 with exactly 2 species and 2 reactions that are formatted as integer strings like "22030312"
 into a list of reaction networks in two formats: (1) that can be used as input into
 Macaulay2 for 'mixed volume' computations, and (2) that looks like a 'traditional'
-presentation of chemical reaction networks, like "A+B->B".
+presentation of chemical reaction networks, like "0-->B+B , 0-->A".
 
 To run the script, open a terminal window,
 be sure to navigate to the folder where you have the input file "s2r2G.txt" and the script "NetworkGenerator.py" saved
