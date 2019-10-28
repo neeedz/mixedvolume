@@ -5,6 +5,7 @@ with exactly 2 species and 2 reactions that are formatted as integer strings lik
 into a list of reaction networks in two formats: (1) that can be used as input into
 Macaulay2 for 'mixed volume' computations, and (2) that looks like a 'traditional'
 presentation of chemical reaction networks, like "A+B->B".
+
 To run the script, open a terminal window,
 be sure to navigate to the folder where you have the input file "s2r2G.txt" saved
 and then execute the script.
