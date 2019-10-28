@@ -7,11 +7,14 @@ Macaulay2 for 'mixed volume' computations, and (2) that looks like a 'traditiona
 presentation of chemical reaction networks, like "A+B->B".
 
 To run the script, open a terminal window,
-be sure to navigate to the folder where you have the input file "s2r2G.txt" saved
+be sure to navigate to the folder where you have the input file "s2r2G.txt" and the script "NetworkGenerator.py" saved
 and then execute the script.
 For example, if the file is saved on the desktop, use the following commands:
+
 cd ./Desktop/
+
 python3.7 NetworkGenerator.py
+
 The output files "2species2reactionnetworksforM2.txt" and "2species2reactionnetworks.txt"
 will be saved to the current folder.
 
@@ -26,19 +29,24 @@ to retrieve network now
 
 define empty sum to be 0
 find square vertex 0
+
 	reaction source = sum of all species pointing in to 0
 	reaction target = sum of all species pointing out of 0
 	output as "reaction source --> reaction target" (to be used in M2)
+
 in general: find square vertex j
+	
 	reaction source = sum of all species pointing in to j
 	reaction target = sum of all species pointing out of j
 	output as rxnj = "reaction source --> reaction target" [a string] (to be used in M2)
+
 do this for all reaction verts j = 0, 1, ... , s[0]-1
 
 then network = {rxn1, ... , rxnm}, NullSymbol => "0"
 
 
 will then be able to pass to M2 as follows
+	
 	N = reactionNetwork(network)
 	R = createRing(N,QQ)
 	steadyStateEquations N
