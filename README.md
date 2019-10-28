@@ -29,7 +29,6 @@ s = #rxn-verts #species-verts source-1 target-1 source-2 target-2 ... source-n t
 to retrieve network now
 
 define empty sum to be 0
-
 find square vertex 0
 
 	reaction source = sum of all species pointing in to 0
