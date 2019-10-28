@@ -1,4 +1,4 @@
-# Reformatting network strings for mixed volume compuatations
+# Reformatting network strings for mixed volume computations
 
 We provide a Python script NetworkGenerator.py that will convert the list of reaction networks
 with exactly 2 species and 2 reactions that are formatted as integer strings like "22030312"
