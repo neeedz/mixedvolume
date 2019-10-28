@@ -21,13 +21,15 @@ will be saved to the current folder.
 Psuedocode for translating between network string and a network presented in the format for the Macaulay2 package ReactionNetworks.m2
 
 s = #rxn-verts #species-verts source-1 target-1 source-2 target-2 ... source-n target-n
-make a square vertex 0, 1, ..., s[0]-1
-make a circle vertex s[0], s[0]+1, ..., s[0]+s[1]-1
-draw an arrow s[i] -> s[i+1] for each pair s[i] s[i+1] starting from i = 2 until i=len(s)-1 by 2
+
+	make a square vertex 0, 1, ..., s[0]-1
+	make a circle vertex s[0], s[0]+1, ..., s[0]+s[1]-1
+	draw an arrow s[i] -> s[i+1] for each pair s[i] s[i+1] starting from i = 2 until i=len(s)-1 by 2
 
 to retrieve network now
 
 define empty sum to be 0
+
 find square vertex 0
 
 	reaction source = sum of all species pointing in to 0
